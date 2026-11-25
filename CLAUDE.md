@@ -32,3 +32,9 @@ Static HTML, no build step. Preview: `python3 -m http.server 8850` from this fol
 - **Checkout** is not wired: the cart's Checkout button shows a "connects at launch" note until `checkoutUrl` is set.
 - Logo is a brand asset: keep its gold bevel and black outline as supplied; never recolour it.
 - Montserrat is used only inside sticker art (matches the logo tagline); UnifrakturMaguntia stands in for the logo's Old English lettering on stickers.
+
+## Deploy
+
+- Own git repo → `getsumactright/fortabella` (public; listed in the umbrella `.gitignore`).
+- Live: https://getsumactright.github.io/fortabella/ (GitHub Pages, `main` branch root; all pages `noindex`). Pushing to `main` redeploys in about 30 seconds.
+- Not in git: `source/client/` (client originals), `.taste-skill/`, `.impeccable/review/` and other local tool output.
