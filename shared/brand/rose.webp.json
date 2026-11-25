@@ -1,0 +1,4 @@
+{
+  "prompt": "ORIGIN: central rose lifted from the client-supplied Fortabella logo (crop 430x400 at 590,470). Alpha derived from the image: black backing keyed by luminance, petals kept by red dominance, leaves and gold scrolls removed by colour, stamen disc opaque; then morphological opening (removes specks) and closing (fills shadowed petal overlaps), median and 0.8px blur on the edge (ffmpeg). Displayed at native size.",
+  "createdAt": "2026-11-25T17:27:07.133Z"
+}

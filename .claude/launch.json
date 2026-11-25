@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "fortabella",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8850", "--directory", "/Users/blackmountain/Claude Projects/Fortabella"],
+      "port": 8850
+    }
+  ]
+}

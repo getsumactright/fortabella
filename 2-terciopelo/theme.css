@@ -1,0 +1,173 @@
+/* Terciopelo — black velvet jewelry box. The logo's black outline becomes the ground. */
+:root {
+  --ground: #110a0c;
+  --surface: #1d1215;
+  --surface-2: #2b1a1f;
+  --ink: #fff2e2;
+  --ink-soft: #d8c0b2;
+  --accent: #c8174a;
+  --accent-hover: #a80f3b;
+  --accent-ink: #fff2e2;
+  --gold: #ebb33a;
+  --cream: #fff4e4;
+  --sticker-edge: rgba(0, 0, 0, 0.45);
+  --font-display: "Marcellus", "Trajan Pro", serif;
+  --font-text: "Jost", system-ui, sans-serif;
+  --btn-radius: 2px;
+  --card-radius: 0;
+  --hover-tint: rgba(255, 242, 226, 0.08);
+  --focus: var(--gold);
+  --head-bg: var(--ground);
+  --foot-bg: #0a0607;
+  --cart-bg: var(--surface);
+  color-scheme: dark;
+}
+
+h1, h2, h3, .cart__title { font-family: var(--font-display); font-weight: 400; letter-spacing: 0; }
+::selection { background: var(--gold); color: var(--ground); }
+.btn { background: var(--surface-2); color: var(--ink); }
+.btn--primary { background: var(--accent); color: var(--accent-ink); }
+.btn--gold { background: var(--gold); color: var(--ground); }
+.btn--gold:hover { background: #f5c556; }
+.cart-btn__count { background: var(--gold); color: var(--ground); }
+.chip { background: var(--surface); color: var(--ink); }
+.chip:hover { background: var(--surface-2); }
+.chip[aria-pressed="true"] { background: var(--gold); color: var(--ground); }
+.qty { background: var(--surface-2); }
+.qty button:hover { background: rgba(255, 242, 226, 0.1); }
+.cart__foot { background: var(--surface-2); }
+.cart__pending { background: var(--ground); }
+
+/* ---------- velvet cushions ---------- */
+.p-card { text-align: center; align-items: center; gap: 10px; }
+.p-card__media { width: 100%; aspect-ratio: 1; padding: 17%; border-radius: 50%; background: var(--surface); transition: background-color 0.35s; }
+.p-card:hover .p-card__media { background: var(--surface-2); }
+.p-card__name { font-family: var(--font-display); font-size: 22px; margin-top: 6px; }
+.p-card__meta { justify-content: center; }
+.p-card__price { color: var(--gold); font-weight: 600; }
+.p-card__cat { display: none; }
+.p-card__add { align-self: center; background: transparent; color: var(--ink); border: 1.5px solid rgba(255, 242, 226, 0.4); min-height: 44px; }
+.p-card__add:hover { border-color: var(--gold); color: var(--gold); }
+.p-card__add.is-added { background: var(--gold); color: var(--ground); border-color: var(--gold); }
+
+/* ---------- hero: logo on velvet + one charm ---------- */
+.hero { padding: clamp(20px, 3vw, 40px) 0 clamp(64px, 8vw, 112px); }
+.hero__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+.hero__logo { width: min(640px, 100%); margin-left: -1.5%; }
+.hero__title { margin-top: clamp(20px, 2.6vw, 36px); font-size: clamp(38px, 4.4vw, 64px); line-height: 1.04; max-width: 15ch; }
+.hero__sub { margin-top: 18px; max-width: 44ch; font-size: clamp(17px, 1.35vw, 19px); color: var(--ink-soft); }
+.hero__actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.hero__actions .btn { min-height: 54px; padding: 0 30px; }
+.hero__more { font-weight: 600; color: var(--gold); }
+.charm { display: grid; justify-items: center; text-align: center; gap: 14px; justify-self: end; width: min(440px, 100%); }
+.charm__disc { width: min(440px, 100%); aspect-ratio: 1; border-radius: 50%; background: var(--surface); display: grid; place-items: center; padding: 16%; }
+.charm__disc .sticker { animation: sway 7s ease-in-out infinite; transform-origin: 50% 0; }
+@keyframes sway { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+.charm__name { font-family: var(--font-display); font-size: 28px; }
+.charm__meta { color: var(--ink-soft); }
+.charm__meta strong { color: var(--gold); font-weight: 600; margin-left: 8px; }
+
+/* ---------- the collection ---------- */
+.coll { padding: clamp(72px, 9vw, 128px) 0; background: var(--surface); }
+.coll .p-card__media { background: var(--ground); }
+.coll .p-card:hover .p-card__media { background: #170e11; }
+.coll__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px; margin-bottom: clamp(36px, 4vw, 60px); }
+.coll__title { font-size: clamp(34px, 3.8vw, 56px); line-height: 1.04; }
+.coll__sub { margin-top: 12px; color: var(--ink-soft); max-width: 46ch; font-size: 18px; }
+.coll__link { color: var(--gold); font-weight: 600; display: inline-flex; gap: 8px; align-items: center; }
+.coll .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(28px, 3vw, 48px) clamp(16px, 2.4vw, 40px); }
+
+/* ---------- statement ---------- */
+.vow { padding: clamp(96px, 12vw, 180px) 0; text-align: center; }
+.vow__title { font-size: clamp(30px, 5.6vw, 84px); line-height: 1.02; max-width: 16ch; margin-inline: auto; }
+.vow__title > span:not(.gem) { display: inline; }
+.vow__title .gem { width: 0.32em; height: 0.32em; margin: 0 0.3em 0.14em; vertical-align: middle; }
+@media (max-width: 700px) { .vow__title > span:not(.gem) { display: block; } .vow__title .gem { display: none; } .charm { justify-self: center; } }
+.vow__text { margin: 28px auto 0; max-width: 54ch; font-size: 18px; color: var(--ink-soft); }
+.vow__text + .vow__text { margin-top: 12px; }
+
+/* ---------- categories as four jewel trays ---------- */
+.trays { padding: 0 0 clamp(96px, 12vw, 160px); }
+.trays__title { font-size: clamp(30px, 3vw, 44px); margin-bottom: 32px; }
+.trays__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 24px); }
+.trays__list .cat__link { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; gap: 4px 16px; align-items: center; padding: 22px; background: var(--surface); transition: background-color 0.3s; }
+.trays__list .cat__link:hover { background: var(--surface-2); }
+.trays__list .cat__art { grid-row: 1 / 3; width: 72px; transition: transform 0.5s var(--ease-spring); }
+.trays__list .cat__link:hover .cat__art { transform: rotate(-8deg) scale(1.08); }
+.trays__list .cat__name { font-family: var(--font-display); font-size: 24px; line-height: 1.1; }
+.trays__list .cat__count { color: var(--gold); font-weight: 600; font-size: 15px; }
+
+/* ---------- pack: the one cream field ---------- */
+.pack { background: var(--cream); color: #1a0d10; padding: clamp(80px, 10vw, 140px) 0; --ink-soft: #5b3a40; --sticker-edge: rgba(26, 13, 16, 0.14); --focus: var(--accent); }
+.pack__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.pack__title { font-size: clamp(36px, 4vw, 60px); line-height: 1.02; }
+.pack__sub { margin-top: 18px; font-size: 18px; color: var(--ink-soft); max-width: 42ch; }
+.pack__price { margin-top: 22px; font-family: var(--font-display); font-size: 32px; }
+.pack__actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.pack__actions .btn { min-height: 54px; padding: 0 30px; }
+.pack__actions .btn.is-added { background: #1a0d10; color: var(--cream); }
+.pack__more { font-weight: 600; }
+.pack__art { max-width: 520px; width: 100%; justify-self: center; }
+
+/* ---------- footer: the logo glows on black ---------- */
+.site-foot__motto { color: var(--gold); }
+
+/* shop + product */
+.shop__title, .pdp__name { font-size: clamp(40px, 5vw, 72px); line-height: 1.02; }
+.pdp__media { border-radius: 50%; aspect-ratio: 1; display: grid; place-items: center; }
+.pdp__price { color: var(--gold); font-family: var(--font-display); font-weight: 400; font-size: 32px; }
+.related__title { font-size: clamp(30px, 3vw, 44px); }
+.related .p-card__media, .shop .p-card__media { background: var(--surface); }
+
+@media (max-width: 960px) {
+  .hero__grid, .pack__grid { grid-template-columns: 1fr; }
+  .charm { justify-self: center; }
+  .hero__logo { width: min(720px, 100%); }
+  .charm__disc { width: min(360px, 80vw); }
+  .coll .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trays__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .trays__list { grid-template-columns: 1fr; }
+  .coll__head { grid-template-columns: 1fr; }
+  .p-card__add { width: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .charm__disc .sticker { animation: none; } }
+
+/* ---------- review fixes: one filled action in the hero; collections as a quiet list ---------- */
+.btn--outline { background: transparent; color: var(--ink); border: 1.5px solid rgba(255, 242, 226, 0.5); }
+.btn--outline:hover { border-color: var(--gold); color: var(--gold); background: transparent; }
+.trays__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px clamp(24px, 4vw, 64px); }
+.trays__list .cat__link { grid-template-columns: 72px 1fr auto; grid-template-rows: auto; gap: 20px; padding: 14px 16px; margin-inline: -16px; background: transparent; border-radius: 999px 0 0 999px; }
+.trays__list .cat__link:hover { background: var(--surface); }
+.trays__list .cat__art { grid-row: auto; width: 72px; }
+.trays__list .cat__name { font-size: clamp(28px, 2.6vw, 38px); }
+.trays__list .cat__count { font-size: 17px; }
+@media (max-width: 700px) { .trays__list { grid-template-columns: 1fr; } .trays__list .cat__link { grid-template-columns: 56px 1fr auto; } .trays__list .cat__art { width: 56px; } }
+
+/* ---------- velvet: generated plates (img/velvet-cushion.webp, img/velvet-ground.webp) ---------- */
+.hero { background: var(--ground) url("img/velvet-ground.webp") repeat; background-size: 512px; }
+.p-card__media,
+.charm__disc,
+.pdp__media { background: url("img/velvet-cushion.webp") center / contain no-repeat; border-radius: 0; padding: 19% 19% 25%; }
+.p-card:hover .p-card__media,
+.coll .p-card__media,
+.coll .p-card:hover .p-card__media,
+.related .p-card__media,
+.shop .p-card__media { background: url("img/velvet-cushion.webp") center / contain no-repeat; }
+.p-card:hover .sticker { transform: translateY(-4%) rotate(-3deg); }
+.charm__disc { padding: 20% 20% 26%; }
+.pdp__media { aspect-ratio: 1; padding: 18% 18% 24%; }
+.cart-line__art { background: url("img/velvet-cushion.webp") center / contain no-repeat; padding: 14% 14% 20%; }
+.trays__list .cat__art { background: url("img/velvet-cushion.webp") center / contain no-repeat; padding: 12px 12px 16px; width: 80px; }
+/* collection rows: art | name | count, each in its own column */
+.trays__list .cat__link { grid-template-columns: 80px minmax(0, 1fr) auto; grid-template-areas: "art name count"; }
+.trays__list .cat__art { grid-area: art; }
+.trays__list .cat__name { grid-area: name; white-space: nowrap; }
+.trays__list .cat__count { grid-area: count; }
+@media (max-width: 700px) { .trays__list .cat__link { grid-template-columns: 64px minmax(0, 1fr) auto; } .trays__list .cat__art { width: 64px; } }
+/* gold is the buy colour everywhere in this world */
+.btn--primary { background: var(--gold); color: var(--ground); }
+.btn--primary:hover { background: #f5c556; }
+.pack .btn--primary { border: 2px solid #1a0d10; }
+.pack__actions .btn.is-added, .btn--primary.is-added { background: var(--cream); color: #1a0d10; }

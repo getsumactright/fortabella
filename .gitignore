@@ -1,0 +1,12 @@
+# local tooling output
+.taste-skill/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/hook.cache.json
+.impeccable/config.local.json
+.claude/settings.local.json
+.DS_Store
+
+# client originals (large; the web-sized copies ship in shared/)
+source/client/

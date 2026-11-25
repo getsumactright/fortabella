@@ -1,0 +1,77 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "1-rosa-y-oro/index.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.076Z",
+        "reason": "Claude, verified in 1440/768/390 renders: flagged full-bleed sections and panels inset their text through .wrap or own padding from the external stylesheet; static scan cannot see it"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "2-terciopelo/index.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.090Z",
+        "reason": "Claude, verified in 1440/768/390 renders: flagged full-bleed sections and panels inset their text through .wrap or own padding from the external stylesheet; static scan cannot see it"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "3-flash-sheet/index.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.105Z",
+        "reason": "Claude, verified in 1440/768/390 renders: flagged full-bleed sections and panels inset their text through .wrap or own padding from the external stylesheet; static scan cannot see it"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "4-flor-fuerte/index.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.120Z",
+        "reason": "Claude, verified in 1440/768/390 renders: flagged full-bleed sections and panels inset their text through .wrap or own padding from the external stylesheet; static scan cannot see it"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.136Z",
+        "reason": "Claude, verified in 1440/768/390 renders: flagged full-bleed sections and panels inset their text through .wrap or own padding from the external stylesheet; static scan cannot see it"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "3-flash-sheet/*.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.150Z",
+        "reason": "Claude: cream is the Fortabella logo's own letter colour, used as tattoo-flash paper (Flash Sheet) and page ground (Flor Fuerte)"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "4-flor-fuerte/*.html"
+        ],
+        "createdAt": "2026-11-25T16:55:41.165Z",
+        "reason": "Claude: cream is the Fortabella logo's own letter colour, used as tattoo-flash paper (Flash Sheet) and page ground (Flor Fuerte)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "montserrat",
+        "createdAt": "2026-11-25T17:31:54.174Z",
+        "reason": "Claude: Montserrat 800 is loaded only to letter the stand-in sticker SVG art, matching the logo tagline; DESIGN.md records it as sticker-art-only, not a UI face"
+      }
+    ]
+  }
+}

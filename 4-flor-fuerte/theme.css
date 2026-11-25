@@ -1,0 +1,154 @@
+/* Flor Fuerte — the logo's rose, enlarged, on fields of crimson. */
+:root {
+  --ground: #fff3e6;
+  --surface: #fbe6dc;
+  --surface-2: #f3d2c8;
+  --ink: #1c0a0e;
+  --ink-soft: #6b2a38;
+  --rose: #9e0f35;
+  --rose-deep: #730a27;
+  --olive: #8fa12a;
+  --accent: #9e0f35;
+  --accent-hover: #800a2a;
+  --accent-ink: #fff3e6;
+  --gold: #f2b51c;
+  --sticker-edge: rgba(28, 10, 14, 0.14);
+  --font-display: "Gloock", "Bodoni Moda", serif;
+  --font-text: "Figtree", system-ui, sans-serif;
+  --btn-radius: 999px;
+  --card-radius: 28px;
+  --hover-tint: rgba(28, 10, 14, 0.07);
+  --head-bg: var(--ground);
+  --foot-bg: var(--ink);
+  --foot-ink: var(--ground);
+}
+
+h1, h2, h3, .cart__title { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.01em; }
+.site-foot__motto { color: var(--gold); }
+.site-foot__small { color: #e9cfc4; opacity: 1; }
+
+/* home: the header sits on the rose field until the hero scrolls away */
+[data-page="home"] { --head-bg: var(--rose); --head-ink: var(--ground); }
+[data-page="home"].past-hero { --head-bg: var(--ground); --head-ink: var(--ink); }
+[data-page="home"]:not(.past-hero) .site-head { --hover-tint: rgba(255, 243, 230, 0.12); --focus: var(--gold); }
+[data-page="home"]:not(.past-hero) .cart-btn__count { background: var(--gold); color: var(--ink); }
+
+/* buttons on rose */
+.btn--gold { background: var(--gold); color: var(--ink); }
+.btn--gold:hover { background: #ffc634; }
+.btn--gold.is-added { background: var(--ground); }
+.link-light { color: var(--ground); font-weight: 600; }
+
+/* ---------- product cards: rounded petals ---------- */
+.p-card__media { border-radius: var(--card-radius); padding: 14%; transition: background-color 0.3s, border-radius 0.5s var(--ease-out); }
+.p-card:hover .p-card__media { border-radius: 50%; background: var(--surface-2); }
+.p-card__name { font-family: var(--font-display); font-size: 24px; }
+.p-card__add { background: var(--accent); color: var(--accent-ink); }
+.p-card__add:hover { background: var(--accent-hover); }
+.p-card__add.is-added { background: var(--olive); color: var(--ink); }
+
+/* ---------- hero ---------- */
+.hero { background: var(--rose); color: var(--ground); position: relative; overflow: hidden; min-height: calc(100svh - var(--head-h)); display: flex; align-items: center; padding: clamp(24px, 3vw, 48px) 0 clamp(56px, 6vw, 88px); --sticker-edge: rgba(0, 0, 0, 0.3); --focus: var(--gold); }
+.hero__grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
+.hero__logo { width: min(520px, 100%); margin-left: -1.5%; }
+.hero__title { margin-top: clamp(18px, 2.2vw, 30px); font-size: clamp(40px, 4.8vw, 74px); line-height: 1.02; max-width: 13ch; }
+.hero__sub { margin-top: 18px; max-width: 44ch; font-size: clamp(17px, 1.35vw, 19px); color: #ffe3dc; }
+.hero__actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.hero__actions .btn { min-height: 56px; padding: 0 32px; }
+.bloom-stage { position: relative; aspect-ratio: 1; width: min(640px, 100%); justify-self: center; display: grid; place-items: center; }
+.bloom { position: absolute; inset: -14%; width: 128%; height: 128%; animation: turn 90s linear infinite; }
+@keyframes turn { to { transform: rotate(360deg); } }
+.bloom-pick { position: relative; z-index: 1; display: grid; justify-items: center; gap: 12px; text-align: center; }
+.bloom-pick__art { width: clamp(180px, 20vw, 280px); display: block; transition: transform 0.5s var(--ease-spring); }
+.bloom-pick__art:hover { transform: rotate(-5deg) scale(1.04); }
+.bloom-pick__tag { display: flex; align-items: center; gap: 12px; padding: 6px 6px 6px 18px; background: var(--ink); color: var(--ground); border-radius: 999px; }
+.bloom-pick__tag strong { font-weight: 700; font-variant-numeric: tabular-nums; }
+.bloom-pick__tag .btn { min-height: 40px; padding: 0 16px; font-size: 15px; }
+
+/* ---------- favorites: one large + three ---------- */
+.favs { padding: clamp(80px, 10vw, 140px) 0; }
+.favs__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: clamp(32px, 4vw, 56px); }
+.favs__title { font-size: clamp(36px, 4.2vw, 64px); line-height: 1.02; }
+.favs__link { font-weight: 600; display: inline-flex; gap: 8px; align-items: center; }
+.favs .grid { grid-template-columns: 1.35fr 1fr 1fr; grid-template-rows: auto auto; gap: clamp(16px, 2vw, 32px); }
+.favs .p-card:first-child { grid-row: span 2; }
+.favs .p-card:first-child .p-card__media { flex: 1; display: grid; place-items: center; padding: 18%; background: var(--surface-2); }
+.favs .p-card:first-child .p-card__add { margin-top: 0; }
+.favs .p-card:first-child .p-card__name { font-size: 34px; }
+
+/* ---------- statement on black ---------- */
+.vow { background: var(--ink); color: var(--ground); padding: clamp(96px, 12vw, 170px) 0; }
+.vow__grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr); gap: clamp(32px, 5vw, 80px); align-items: end; }
+.vow__title { font-size: clamp(48px, 7vw, 112px); line-height: 0.98; }
+.vow__title span { display: block; }
+.vow__title span + span { color: var(--gold); }
+.vow__text { font-size: 18px; color: #ead7cf; max-width: 40ch; display: grid; gap: 14px; }
+
+/* ---------- collections on rose ---------- */
+.petals { background: var(--rose); color: var(--ground); padding: clamp(80px, 10vw, 140px) 0; --sticker-edge: rgba(0, 0, 0, 0.3); --focus: var(--gold); }
+.petals__title { font-size: clamp(36px, 4.2vw, 64px); margin-bottom: clamp(28px, 3vw, 48px); }
+.petals__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 24px); }
+.petals__list .cat__link { display: grid; grid-template-rows: auto auto; justify-items: start; gap: 6px; padding: clamp(20px, 2vw, 32px); background: var(--rose-deep); border-radius: var(--card-radius); transition: border-radius 0.5s var(--ease-out), background-color 0.3s; position: relative; min-height: 260px; align-content: end; }
+.petals__list .cat__link:hover { border-radius: 120px 28px 120px 28px; background: #5e0820; }
+.petals__list .cat__art { position: absolute; top: 20px; right: 20px; width: 46%; transition: transform 0.5s var(--ease-spring); }
+.petals__list .cat__link:hover .cat__art { transform: rotate(-10deg) scale(1.08); }
+.petals__list .cat__name { font-family: var(--font-display); font-size: clamp(26px, 2.2vw, 34px); line-height: 1.05; }
+.petals__list .cat__count { color: var(--gold); font-weight: 700; }
+
+/* ---------- story + pack ---------- */
+.story { padding: clamp(80px, 10vw, 140px) 0; }
+.story__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.story__title { font-size: clamp(36px, 4.2vw, 64px); line-height: 1.02; max-width: 13ch; }
+.story__text { margin-top: 22px; display: grid; gap: 14px; font-size: 18px; max-width: 46ch; }
+.packcard { background: var(--surface); border-radius: var(--card-radius); padding: clamp(24px, 3vw, 44px); display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr); gap: 24px; align-items: center; }
+.packcard__title { font-size: clamp(28px, 2.6vw, 40px); line-height: 1.05; }
+.packcard__sub { margin-top: 10px; color: var(--ink-soft); }
+.packcard__price { margin-top: 14px; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.packcard .btn { margin-top: 16px; }
+.packcard__more { display: inline-block; margin-top: 12px; font-weight: 600; }
+
+/* shop + product */
+.shop__title, .pdp__name { font-size: clamp(42px, 5vw, 76px); line-height: 1.02; }
+.pdp__media { background: var(--surface); }
+.pdp__price { font-size: 28px; }
+.related__title { font-size: clamp(30px, 3vw, 46px); }
+.chip[aria-pressed="true"] { background: var(--rose); color: var(--ground); }
+
+@media (max-width: 1000px) {
+  .hero__grid, .vow__grid, .story__grid { grid-template-columns: 1fr; }
+  .bloom-stage { width: min(480px, 92vw); }
+  .favs .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .favs .p-card:first-child { grid-row: auto; grid-column: span 2; }
+  .petals__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .hero { min-height: 0; }
+  .favs .p-card:first-child .p-card__media { padding: 22%; }
+  .petals__list .cat__link { min-height: 200px; }
+  .packcard { grid-template-columns: 1fr; }
+  .p-card__add { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .bloom { animation: none; } }
+
+/* ---------- review fixes ---------- */
+/* the logo's own painted rose, lifted from the logo artwork, turning slowly */
+.bloom-stage { width: min(600px, 100%); }
+.bloom { inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.bloom-pick { position: absolute; right: -2%; bottom: 2%; justify-items: end; }
+.bloom-pick__art { width: clamp(150px, 15vw, 210px); rotate: -6deg; }
+/* one gold fill in the first viewport: the hero sticker's Add */
+.btn--outline-light { background: transparent; color: var(--ground); border: 2px solid var(--ground); }
+.btn--outline-light:hover { background: var(--ground); color: var(--rose); }
+/* collections: a row of stickers on the crimson field, not four cards */
+.petals__list { gap: clamp(16px, 3vw, 48px); }
+.petals__list .cat__link { background: transparent; padding: 0; min-height: 0; border-radius: 0; justify-items: center; text-align: center; align-content: start; gap: 10px; }
+.petals__list .cat__link:hover { background: transparent; border-radius: 0; }
+.petals__list .cat__art { position: static; width: min(190px, 80%); }
+.petals__list .cat:nth-child(odd) .cat__art { rotate: -6deg; }
+.petals__list .cat:nth-child(even) .cat__art { rotate: 5deg; }
+.petals__list .cat__link:hover .cat__art { transform: scale(1.06); }
+.petals__list .cat__name { font-size: clamp(28px, 2.6vw, 40px); }
+@media (max-width: 1000px) { .bloom-pick { right: 0; } }
+@media (max-width: 560px) { .bloom-pick__art { width: 130px; } .bloom-pick__tag { font-size: 14px; } }
+/* rose shown at its native resolution (430px source), no upscale */
+.bloom-stage { width: min(440px, 100%); }

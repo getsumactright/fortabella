@@ -1,0 +1,868 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T17:31:04.196879+00:00",
+  "title": "Design System: Fortabella",
+  "extensions": {
+    "colorMeta": {
+      "rosa-ground": {
+        "role": "neutral",
+        "displayName": "Blush",
+        "canonical": "#f8e5e7",
+        "tonalRamp": [
+          "oklch(15% 0.004 10)",
+          "oklch(26% 0.009 10)",
+          "oklch(38% 0.014 10)",
+          "oklch(49% 0.019 10)",
+          "oklch(61% 0.019 10)",
+          "oklch(72% 0.014 10)",
+          "oklch(84% 0.009 10)",
+          "oklch(95% 0.004 10)"
+        ]
+      },
+      "rosa-surface": {
+        "role": "neutral",
+        "displayName": "Shell Cream",
+        "canonical": "#fff8f2",
+        "tonalRamp": [
+          "oklch(15% 0.002 63)",
+          "oklch(26% 0.005 63)",
+          "oklch(38% 0.007 63)",
+          "oklch(49% 0.010 63)",
+          "oklch(61% 0.010 63)",
+          "oklch(72% 0.007 63)",
+          "oklch(84% 0.005 63)",
+          "oklch(95% 0.002 63)"
+        ]
+      },
+      "rosa-surface-2": {
+        "role": "neutral",
+        "displayName": "Petal",
+        "canonical": "#f1d3d8",
+        "tonalRamp": [
+          "oklch(15% 0.007 6)",
+          "oklch(26% 0.015 6)",
+          "oklch(38% 0.022 6)",
+          "oklch(49% 0.030 6)",
+          "oklch(61% 0.030 6)",
+          "oklch(72% 0.022 6)",
+          "oklch(84% 0.015 6)",
+          "oklch(95% 0.007 6)"
+        ]
+      },
+      "rosa-ink": {
+        "role": "neutral",
+        "displayName": "Bordeaux Ink",
+        "canonical": "#2a0e15",
+        "tonalRamp": [
+          "oklch(15% 0.009 6)",
+          "oklch(26% 0.020 6)",
+          "oklch(38% 0.031 6)",
+          "oklch(49% 0.042 6)",
+          "oklch(61% 0.042 6)",
+          "oklch(72% 0.031 6)",
+          "oklch(84% 0.020 6)",
+          "oklch(95% 0.009 6)"
+        ]
+      },
+      "rosa-ink-soft": {
+        "role": "neutral",
+        "displayName": "Mauve Ink",
+        "canonical": "#6a3442",
+        "tonalRamp": [
+          "oklch(15% 0.016 5)",
+          "oklch(26% 0.034 5)",
+          "oklch(38% 0.052 5)",
+          "oklch(49% 0.069 5)",
+          "oklch(61% 0.069 5)",
+          "oklch(72% 0.052 5)",
+          "oklch(84% 0.034 5)",
+          "oklch(95% 0.016 5)"
+        ]
+      },
+      "rosa-crimson": {
+        "role": "primary",
+        "displayName": "Rosa Crimson",
+        "canonical": "#b3123e",
+        "tonalRamp": [
+          "oklch(15% 0.038 15)",
+          "oklch(26% 0.081 15)",
+          "oklch(38% 0.124 15)",
+          "oklch(49% 0.167 15)",
+          "oklch(61% 0.167 15)",
+          "oklch(72% 0.124 15)",
+          "oklch(84% 0.081 15)",
+          "oklch(95% 0.038 15)"
+        ]
+      },
+      "rosa-crimson-deep": {
+        "role": "primary",
+        "displayName": "Rosa Crimson Deep",
+        "canonical": "#93072f",
+        "tonalRamp": [
+          "oklch(15% 0.033 15)",
+          "oklch(26% 0.071 15)",
+          "oklch(38% 0.109 15)",
+          "oklch(49% 0.147 15)",
+          "oklch(61% 0.147 15)",
+          "oklch(72% 0.109 15)",
+          "oklch(84% 0.071 15)",
+          "oklch(95% 0.033 15)"
+        ]
+      },
+      "rosa-gold": {
+        "role": "tertiary",
+        "displayName": "Diamond Gold",
+        "canonical": "#d99a12",
+        "tonalRamp": [
+          "oklch(15% 0.030 79)",
+          "oklch(26% 0.064 79)",
+          "oklch(38% 0.097 79)",
+          "oklch(49% 0.131 79)",
+          "oklch(61% 0.131 79)",
+          "oklch(72% 0.097 79)",
+          "oklch(84% 0.064 79)",
+          "oklch(95% 0.030 79)"
+        ]
+      },
+      "rosa-wine": {
+        "role": "secondary",
+        "displayName": "Wine",
+        "canonical": "#3a0e18",
+        "tonalRamp": [
+          "oklch(15% 0.014 10)",
+          "oklch(26% 0.030 10)",
+          "oklch(38% 0.046 10)",
+          "oklch(49% 0.062 10)",
+          "oklch(61% 0.062 10)",
+          "oklch(72% 0.046 10)",
+          "oklch(84% 0.030 10)",
+          "oklch(95% 0.014 10)"
+        ]
+      },
+      "velvet-ground": {
+        "role": "neutral",
+        "displayName": "Black Velvet",
+        "canonical": "#110a0c",
+        "tonalRamp": [
+          "oklch(15% 0.003 360)",
+          "oklch(26% 0.006 360)",
+          "oklch(38% 0.008 360)",
+          "oklch(49% 0.011 360)",
+          "oklch(61% 0.011 360)",
+          "oklch(72% 0.008 360)",
+          "oklch(84% 0.006 360)",
+          "oklch(95% 0.003 360)"
+        ]
+      },
+      "velvet-surface": {
+        "role": "neutral",
+        "displayName": "Velvet Lining",
+        "canonical": "#1d1215",
+        "tonalRamp": [
+          "oklch(15% 0.004 1)",
+          "oklch(26% 0.008 1)",
+          "oklch(38% 0.013 1)",
+          "oklch(49% 0.017 1)",
+          "oklch(61% 0.017 1)",
+          "oklch(72% 0.013 1)",
+          "oklch(84% 0.008 1)",
+          "oklch(95% 0.004 1)"
+        ]
+      },
+      "velvet-surface-2": {
+        "role": "neutral",
+        "displayName": "Plush",
+        "canonical": "#2b1a1f",
+        "tonalRamp": [
+          "oklch(15% 0.006 0)",
+          "oklch(26% 0.012 0)",
+          "oklch(38% 0.019 0)",
+          "oklch(49% 0.025 0)",
+          "oklch(61% 0.025 0)",
+          "oklch(72% 0.019 0)",
+          "oklch(84% 0.012 0)",
+          "oklch(95% 0.006 0)"
+        ]
+      },
+      "velvet-footer": {
+        "role": "neutral",
+        "displayName": "Deep Footer",
+        "canonical": "#0a0607",
+        "tonalRamp": [
+          "oklch(15% 0.002 360)",
+          "oklch(26% 0.004 360)",
+          "oklch(38% 0.006 360)",
+          "oklch(49% 0.008 360)",
+          "oklch(61% 0.008 360)",
+          "oklch(72% 0.006 360)",
+          "oklch(84% 0.004 360)",
+          "oklch(95% 0.002 360)"
+        ]
+      },
+      "velvet-ink": {
+        "role": "neutral",
+        "displayName": "Cream Ink",
+        "canonical": "#fff2e2",
+        "tonalRamp": [
+          "oklch(15% 0.005 73)",
+          "oklch(26% 0.011 73)",
+          "oklch(38% 0.017 73)",
+          "oklch(49% 0.022 73)",
+          "oklch(61% 0.022 73)",
+          "oklch(72% 0.017 73)",
+          "oklch(84% 0.011 73)",
+          "oklch(95% 0.005 73)"
+        ]
+      },
+      "velvet-ink-soft": {
+        "role": "neutral",
+        "displayName": "Champagne",
+        "canonical": "#d8c0b2",
+        "tonalRamp": [
+          "oklch(15% 0.007 52)",
+          "oklch(26% 0.014 52)",
+          "oklch(38% 0.022 52)",
+          "oklch(49% 0.030 52)",
+          "oklch(61% 0.030 52)",
+          "oklch(72% 0.022 52)",
+          "oklch(84% 0.014 52)",
+          "oklch(95% 0.007 52)"
+        ]
+      },
+      "velvet-gold": {
+        "role": "primary",
+        "displayName": "Velvet Gold",
+        "canonical": "#ebb33a",
+        "tonalRamp": [
+          "oklch(15% 0.029 82)",
+          "oklch(26% 0.062 82)",
+          "oklch(38% 0.096 82)",
+          "oklch(49% 0.129 82)",
+          "oklch(61% 0.129 82)",
+          "oklch(72% 0.096 82)",
+          "oklch(84% 0.062 82)",
+          "oklch(95% 0.029 82)"
+        ]
+      },
+      "velvet-gold-light": {
+        "role": "primary",
+        "displayName": "Velvet Gold Light",
+        "canonical": "#f5c556",
+        "tonalRamp": [
+          "oklch(15% 0.028 85)",
+          "oklch(26% 0.059 85)",
+          "oklch(38% 0.091 85)",
+          "oklch(49% 0.122 85)",
+          "oklch(61% 0.122 85)",
+          "oklch(72% 0.091 85)",
+          "oklch(84% 0.059 85)",
+          "oklch(95% 0.028 85)"
+        ]
+      },
+      "velvet-cream": {
+        "role": "secondary",
+        "displayName": "Cream Card",
+        "canonical": "#fff4e4",
+        "tonalRamp": [
+          "oklch(15% 0.005 77)",
+          "oklch(26% 0.010 77)",
+          "oklch(38% 0.016 77)",
+          "oklch(49% 0.021 77)",
+          "oklch(61% 0.021 77)",
+          "oklch(72% 0.016 77)",
+          "oklch(84% 0.010 77)",
+          "oklch(95% 0.005 77)"
+        ]
+      },
+      "velvet-cream-ink": {
+        "role": "secondary",
+        "displayName": "Cream Card Ink",
+        "canonical": "#1a0d10",
+        "tonalRamp": [
+          "oklch(15% 0.005 5)",
+          "oklch(26% 0.010 5)",
+          "oklch(38% 0.015 5)",
+          "oklch(49% 0.020 5)",
+          "oklch(61% 0.020 5)",
+          "oklch(72% 0.015 5)",
+          "oklch(84% 0.010 5)",
+          "oklch(95% 0.005 5)"
+        ]
+      },
+      "velvet-crimson": {
+        "role": "tertiary",
+        "displayName": "Velvet Crimson (retained, not a fill)",
+        "canonical": "#c8174a",
+        "tonalRamp": [
+          "oklch(15% 0.041 13)",
+          "oklch(26% 0.088 13)",
+          "oklch(38% 0.134 13)",
+          "oklch(49% 0.181 13)",
+          "oklch(61% 0.181 13)",
+          "oklch(72% 0.134 13)",
+          "oklch(84% 0.088 13)",
+          "oklch(95% 0.041 13)"
+        ]
+      },
+      "flash-ground": {
+        "role": "neutral",
+        "displayName": "Sheet Paper",
+        "canonical": "#f5ecdd",
+        "tonalRamp": [
+          "oklch(15% 0.004 81)",
+          "oklch(26% 0.009 81)",
+          "oklch(38% 0.015 81)",
+          "oklch(49% 0.020 81)",
+          "oklch(61% 0.020 81)",
+          "oklch(72% 0.015 81)",
+          "oklch(84% 0.009 81)",
+          "oklch(95% 0.004 81)"
+        ]
+      },
+      "flash-surface": {
+        "role": "neutral",
+        "displayName": "Aged Paper",
+        "canonical": "#efe3cf",
+        "tonalRamp": [
+          "oklch(15% 0.006 81)",
+          "oklch(26% 0.013 81)",
+          "oklch(38% 0.019 81)",
+          "oklch(49% 0.026 81)",
+          "oklch(61% 0.026 81)",
+          "oklch(72% 0.019 81)",
+          "oklch(84% 0.013 81)",
+          "oklch(95% 0.006 81)"
+        ]
+      },
+      "flash-surface-2": {
+        "role": "neutral",
+        "displayName": "Kraft",
+        "canonical": "#e5d4b9",
+        "tonalRamp": [
+          "oklch(15% 0.008 79)",
+          "oklch(26% 0.017 79)",
+          "oklch(38% 0.027 79)",
+          "oklch(49% 0.036 79)",
+          "oklch(61% 0.036 79)",
+          "oklch(72% 0.027 79)",
+          "oklch(84% 0.017 79)",
+          "oklch(95% 0.008 79)"
+        ]
+      },
+      "flash-ink": {
+        "role": "secondary",
+        "displayName": "Tattoo Ink",
+        "canonical": "#17110f",
+        "tonalRamp": [
+          "oklch(15% 0.002 39)",
+          "oklch(26% 0.005 39)",
+          "oklch(38% 0.007 39)",
+          "oklch(49% 0.010 39)",
+          "oklch(61% 0.010 39)",
+          "oklch(72% 0.007 39)",
+          "oklch(84% 0.005 39)",
+          "oklch(95% 0.002 39)"
+        ]
+      },
+      "flash-ink-soft": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "#594a40",
+        "tonalRamp": [
+          "oklch(15% 0.005 56)",
+          "oklch(26% 0.011 56)",
+          "oklch(38% 0.017 56)",
+          "oklch(49% 0.023 56)",
+          "oklch(61% 0.023 56)",
+          "oklch(72% 0.017 56)",
+          "oklch(84% 0.011 56)",
+          "oklch(95% 0.005 56)"
+        ]
+      },
+      "flash-crimson": {
+        "role": "primary",
+        "displayName": "Flash Crimson",
+        "canonical": "#b3123e",
+        "tonalRamp": [
+          "oklch(15% 0.038 15)",
+          "oklch(26% 0.081 15)",
+          "oklch(38% 0.124 15)",
+          "oklch(49% 0.167 15)",
+          "oklch(61% 0.167 15)",
+          "oklch(72% 0.124 15)",
+          "oklch(84% 0.081 15)",
+          "oklch(95% 0.038 15)"
+        ]
+      },
+      "flash-crimson-deep": {
+        "role": "primary",
+        "displayName": "Flash Crimson Deep",
+        "canonical": "#950a31",
+        "tonalRamp": [
+          "oklch(15% 0.033 15)",
+          "oklch(26% 0.071 15)",
+          "oklch(38% 0.109 15)",
+          "oklch(49% 0.147 15)",
+          "oklch(61% 0.147 15)",
+          "oklch(72% 0.109 15)",
+          "oklch(84% 0.071 15)",
+          "oklch(95% 0.033 15)"
+        ]
+      },
+      "flash-gold": {
+        "role": "tertiary",
+        "displayName": "Old Gold",
+        "canonical": "#c98a0b",
+        "tonalRamp": [
+          "oklch(15% 0.028 76)",
+          "oklch(26% 0.060 76)",
+          "oklch(38% 0.092 76)",
+          "oklch(49% 0.125 76)",
+          "oklch(61% 0.125 76)",
+          "oklch(72% 0.092 76)",
+          "oklch(84% 0.060 76)",
+          "oklch(95% 0.028 76)"
+        ]
+      },
+      "flash-olive": {
+        "role": "tertiary",
+        "displayName": "Leaf Olive",
+        "canonical": "#5e7019",
+        "tonalRamp": [
+          "oklch(15% 0.022 121)",
+          "oklch(26% 0.048 121)",
+          "oklch(38% 0.073 121)",
+          "oklch(49% 0.098 121)",
+          "oklch(61% 0.098 121)",
+          "oklch(72% 0.073 121)",
+          "oklch(84% 0.048 121)",
+          "oklch(95% 0.022 121)"
+        ]
+      },
+      "flash-crimson-ink": {
+        "role": "neutral",
+        "displayName": "Flash Button Ink",
+        "canonical": "#fff4e4",
+        "tonalRamp": [
+          "oklch(15% 0.005 77)",
+          "oklch(26% 0.010 77)",
+          "oklch(38% 0.016 77)",
+          "oklch(49% 0.021 77)",
+          "oklch(61% 0.021 77)",
+          "oklch(72% 0.016 77)",
+          "oklch(84% 0.010 77)",
+          "oklch(95% 0.005 77)"
+        ]
+      },
+      "flor-ground": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "#fff3e6",
+        "tonalRamp": [
+          "oklch(15% 0.004 70)",
+          "oklch(26% 0.009 70)",
+          "oklch(38% 0.014 70)",
+          "oklch(49% 0.019 70)",
+          "oklch(61% 0.019 70)",
+          "oklch(72% 0.014 70)",
+          "oklch(84% 0.009 70)",
+          "oklch(95% 0.004 70)"
+        ]
+      },
+      "flor-surface": {
+        "role": "neutral",
+        "displayName": "Blush",
+        "canonical": "#fbe6dc",
+        "tonalRamp": [
+          "oklch(15% 0.005 47)",
+          "oklch(26% 0.011 47)",
+          "oklch(38% 0.018 47)",
+          "oklch(49% 0.024 47)",
+          "oklch(61% 0.024 47)",
+          "oklch(72% 0.018 47)",
+          "oklch(84% 0.011 47)",
+          "oklch(95% 0.005 47)"
+        ]
+      },
+      "flor-surface-2": {
+        "role": "neutral",
+        "displayName": "Petal",
+        "canonical": "#f3d2c8",
+        "tonalRamp": [
+          "oklch(15% 0.008 38)",
+          "oklch(26% 0.017 38)",
+          "oklch(38% 0.026 38)",
+          "oklch(49% 0.035 38)",
+          "oklch(61% 0.035 38)",
+          "oklch(72% 0.026 38)",
+          "oklch(84% 0.017 38)",
+          "oklch(95% 0.008 38)"
+        ]
+      },
+      "flor-ink": {
+        "role": "neutral",
+        "displayName": "Black Rose",
+        "canonical": "#1c0a0e",
+        "tonalRamp": [
+          "oklch(15% 0.006 7)",
+          "oklch(26% 0.014 7)",
+          "oklch(38% 0.021 7)",
+          "oklch(49% 0.028 7)",
+          "oklch(61% 0.028 7)",
+          "oklch(72% 0.021 7)",
+          "oklch(84% 0.014 7)",
+          "oklch(95% 0.006 7)"
+        ]
+      },
+      "flor-ink-soft": {
+        "role": "neutral",
+        "displayName": "Rose Ink",
+        "canonical": "#6b2a38",
+        "tonalRamp": [
+          "oklch(15% 0.019 9)",
+          "oklch(26% 0.040 9)",
+          "oklch(38% 0.062 9)",
+          "oklch(49% 0.083 9)",
+          "oklch(61% 0.083 9)",
+          "oklch(72% 0.062 9)",
+          "oklch(84% 0.040 9)",
+          "oklch(95% 0.019 9)"
+        ]
+      },
+      "flor-rose": {
+        "role": "primary",
+        "displayName": "Rose",
+        "canonical": "#9e0f35",
+        "tonalRamp": [
+          "oklch(15% 0.034 15)",
+          "oklch(26% 0.074 15)",
+          "oklch(38% 0.113 15)",
+          "oklch(49% 0.152 15)",
+          "oklch(61% 0.152 15)",
+          "oklch(72% 0.113 15)",
+          "oklch(84% 0.074 15)",
+          "oklch(95% 0.034 15)"
+        ]
+      },
+      "flor-rose-hover": {
+        "role": "primary",
+        "displayName": "Rose Hover",
+        "canonical": "#800a2a",
+        "tonalRamp": [
+          "oklch(15% 0.029 15)",
+          "oklch(26% 0.063 15)",
+          "oklch(38% 0.097 15)",
+          "oklch(49% 0.131 15)",
+          "oklch(61% 0.131 15)",
+          "oklch(72% 0.097 15)",
+          "oklch(84% 0.063 15)",
+          "oklch(95% 0.029 15)"
+        ]
+      },
+      "flor-rose-deep": {
+        "role": "neutral",
+        "displayName": "Rose Deep",
+        "canonical": "#730a27",
+        "tonalRamp": [
+          "oklch(15% 0.027 14)",
+          "oklch(26% 0.058 14)",
+          "oklch(38% 0.089 14)",
+          "oklch(49% 0.120 14)",
+          "oklch(61% 0.120 14)",
+          "oklch(72% 0.089 14)",
+          "oklch(84% 0.058 14)",
+          "oklch(95% 0.027 14)"
+        ]
+      },
+      "flor-gold": {
+        "role": "secondary",
+        "displayName": "Petal Gold",
+        "canonical": "#f2b51c",
+        "tonalRamp": [
+          "oklch(15% 0.032 83)",
+          "oklch(26% 0.069 83)",
+          "oklch(38% 0.106 83)",
+          "oklch(49% 0.143 83)",
+          "oklch(61% 0.143 83)",
+          "oklch(72% 0.106 83)",
+          "oklch(84% 0.069 83)",
+          "oklch(95% 0.032 83)"
+        ]
+      },
+      "flor-olive": {
+        "role": "tertiary",
+        "displayName": "Leaf Olive",
+        "canonical": "#8fa12a",
+        "tonalRamp": [
+          "oklch(15% 0.028 118)",
+          "oklch(26% 0.060 118)",
+          "oklch(38% 0.092 118)",
+          "oklch(49% 0.125 118)",
+          "oklch(61% 0.125 118)",
+          "oklch(72% 0.092 118)",
+          "oklch(84% 0.060 118)",
+          "oklch(95% 0.028 118)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "body": {
+        "displayName": "Body",
+        "purpose": "Shared body: each direction's text face at 17px/1.55, 16px under 560px."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Shared UI controls: buttons, chips, nav, lang and cart."
+      },
+      "rosa-display": {
+        "displayName": "Rosa Display",
+        "purpose": "Rosa y Oro headings, card names, prices on the product page."
+      },
+      "rosa-body": {
+        "displayName": "Rosa Body",
+        "purpose": "Rosa y Oro text and UI."
+      },
+      "velvet-display": {
+        "displayName": "Velvet Display",
+        "purpose": "Terciopelo headings, card names, prices."
+      },
+      "velvet-body": {
+        "displayName": "Velvet Body",
+        "purpose": "Terciopelo text and UI."
+      },
+      "flash-display": {
+        "displayName": "Flash Display",
+        "purpose": "Flash Sheet blackletter headings and card names; runs larger than the other directions."
+      },
+      "flash-body": {
+        "displayName": "Flash Body",
+        "purpose": "Flash Sheet text and UI."
+      },
+      "flor-display": {
+        "displayName": "Flor Display",
+        "purpose": "Flor Fuerte headings, statement and card names."
+      },
+      "flor-body": {
+        "displayName": "Flor Body",
+        "purpose": "Flor Fuerte text and UI."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cart-drawer",
+        "value": "-24px 0 60px rgba(0, 0, 0, 0.18)",
+        "purpose": "The only shadow: the cart dialog over its backdrop."
+      },
+      {
+        "name": "cart-backdrop",
+        "value": "rgba(20, 8, 10, 0.42)",
+        "purpose": "Dialog ::backdrop tint."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "State transitions, nav underline, drawer slide."
+      },
+      {
+        "name": "ease-spring",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "purpose": "Sticker hover tilt (0.45s), cart count bump (0.5s), category art."
+      },
+      {
+        "name": "button-press",
+        "value": "0.18s; translateY(-1px) hover, scale(0.97) active",
+        "purpose": "All buttons."
+      },
+      {
+        "name": "drawer-in",
+        "value": "0.42s ease-out from translateX(100%)",
+        "purpose": "Cart open; close is 0.22s."
+      },
+      {
+        "name": "velvet-sway",
+        "value": "7s ease-in-out infinite, rotate -3deg to 3deg",
+        "purpose": "Terciopelo hero charm only."
+      },
+      {
+        "name": "rose-turn",
+        "value": "90s linear infinite rotation",
+        "purpose": "Flor Fuerte hero rose only."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition durations 0.01ms",
+        "purpose": "Shared prefers-reduced-motion rule."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "560px"
+      },
+      {
+        "name": "tablet-narrow",
+        "value": "700px"
+      },
+      {
+        "name": "tablet",
+        "value": "860px"
+      },
+      {
+        "name": "tablet-wide",
+        "value": "960px"
+      },
+      {
+        "name": "flor-stack",
+        "value": "1000px"
+      },
+      {
+        "name": "flash-sheet-stack",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Rosa y Oro Buy Button",
+      "kind": "button",
+      "refersTo": "rosa-button-buy",
+      "description": "Crimson pill; the only filled colour on a Rosa y Oro page.",
+      "html": "<button class=\"ds-rosa-buy\">Add to cart</button>",
+      "css": ".ds-rosa-buy{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Jost,system-ui,sans-serif;background:#b3123e;color:#fff8f2;border-radius:999px}.ds-rosa-buy:hover{transform:translateY(-1px)}.ds-rosa-buy:hover{background:#93072f}.ds-rosa-buy:active{transform:scale(.97)}.ds-rosa-buy:focus-visible{outline:3px solid #b3123e;outline-offset:3px}"
+    },
+    {
+      "name": "Rosa y Oro Ghost Button",
+      "kind": "button",
+      "refersTo": "rosa-button-ghost",
+      "description": "Secondary action on blush: 2px ink ring that fills ink on hover.",
+      "html": "<button class=\"ds-rosa-ghost\">Shop stickers</button>",
+      "css": ".ds-rosa-ghost{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Jost,system-ui,sans-serif;min-height:54px;padding:0 30px;background:transparent;color:#2a0e15;border:2px solid #2a0e15;border-radius:999px}.ds-rosa-ghost:hover{background:#2a0e15;color:#fff8f2}.ds-rosa-ghost:focus-visible{outline:3px solid #b3123e;outline-offset:3px}"
+    },
+    {
+      "name": "Rosa y Oro Arch Niche Card",
+      "kind": "card",
+      "refersTo": "",
+      "description": "Product card with an arched niche well, Bodoni name, gold diamond before the category.",
+      "html": "<article class=\"ds-rosa-card\"><div class=\"ds-rosa-niche\"><div class=\"ds-rosa-sticker\">Fuerte y Bella</div></div><h3>Fuerte y Bella</h3><p class=\"ds-rosa-meta\"><b>$4.50</b><span class=\"ds-rosa-cat\">Bilingual</span></p><button class=\"ds-rosa-add\">Add</button></article>",
+      "css": ".ds-rosa-card{display:flex;flex-direction:column;align-items:center;gap:14px;width:220px;text-align:center;font-family:Jost,system-ui,sans-serif;color:#2a0e15;background:#f8e5e7;padding:16px}.ds-rosa-niche{width:100%;padding:16% 14% 12%;background:#fff8f2;border-radius:999px 999px 0 0;transition:background-color .3s}.ds-rosa-card:hover .ds-rosa-niche{background:#fff}.ds-rosa-sticker{aspect-ratio:1;border-radius:50%;background:#b3123e;color:#fff8f2;display:grid;place-items:center;font:700 16px 'UnifrakturMaguntia',serif;transition:transform .45s cubic-bezier(.34,1.56,.64,1)}.ds-rosa-card:hover .ds-rosa-sticker{transform:rotate(-4deg) scale(1.04)}.ds-rosa-card h3{margin:0;font:500 22px 'Bodoni Moda',Didot,serif}.ds-rosa-meta{margin:0;display:flex;gap:10px;font-size:15px}.ds-rosa-cat{color:#6a3442}.ds-rosa-cat::before{content:'';display:inline-block;width:6px;height:6px;margin:0 10px 2px 0;background:#d99a12;transform:rotate(45deg)}.ds-rosa-add{min-height:44px;padding:0 24px;border:0;border-radius:999px;background:#b3123e;color:#fff8f2;font-weight:600}.ds-rosa-add:hover{background:#93072f}"
+    },
+    {
+      "name": "Terciopelo Buy Button",
+      "kind": "button",
+      "refersTo": "velvet-button-buy",
+      "description": "Gold, near-square; the buy colour everywhere in the velvet world.",
+      "html": "<button class=\"ds-velvet-buy\">Add to cart</button>",
+      "css": ".ds-velvet-buy{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Jost,system-ui,sans-serif;background:#ebb33a;color:#110a0c;border-radius:2px}.ds-velvet-buy:hover{transform:translateY(-1px)}.ds-velvet-buy:hover{background:#f5c556}.ds-velvet-buy:active{transform:scale(.97)}.ds-velvet-buy:focus-visible{outline:3px solid #ebb33a;outline-offset:3px}"
+    },
+    {
+      "name": "Terciopelo Outline Button",
+      "kind": "button",
+      "refersTo": "velvet-button-outline",
+      "description": "Secondary action on velvet: 1.5px cream ring that turns gold on hover.",
+      "html": "<button class=\"ds-velvet-outline\">Shop the collection</button>",
+      "css": ".ds-velvet-outline{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Jost,system-ui,sans-serif;min-height:54px;padding:0 30px;background:#110a0c;color:#fff2e2;border:1.5px solid rgba(255,242,226,.5);border-radius:2px}.ds-velvet-outline:hover{border-color:#ebb33a;color:#ebb33a}.ds-velvet-outline:focus-visible{outline:3px solid #ebb33a;outline-offset:3px}"
+    },
+    {
+      "name": "Flash Sheet Buy Button",
+      "kind": "button",
+      "refersTo": "flash-button-buy",
+      "description": "Square crimson button outlined in 3px tattoo ink.",
+      "html": "<button class=\"ds-flash-buy\">Add to cart</button>",
+      "css": ".ds-flash-buy{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Archivo,system-ui,sans-serif;font-weight:700;background:#b3123e;color:#fff4e4;border:3px solid #17110f;border-radius:0}.ds-flash-buy:hover{transform:translateY(-1px)}.ds-flash-buy:hover{background:#950a31}.ds-flash-buy:active{transform:scale(.97)}.ds-flash-buy:focus-visible{outline:3px solid #b3123e;outline-offset:3px}"
+    },
+    {
+      "name": "Flash Sheet Line Button",
+      "kind": "button",
+      "refersTo": "flash-button-line",
+      "description": "Secondary: 3px ink outline on paper, fills ink on hover. Also the card add button.",
+      "html": "<button class=\"ds-flash-line\">Read the glossary</button>",
+      "css": ".ds-flash-line{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Archivo,system-ui,sans-serif;font-weight:700;background:#f5ecdd;color:#17110f;border:3px solid #17110f;border-radius:0}.ds-flash-line:hover{background:#17110f;color:#f5ecdd}.ds-flash-line:focus-visible{outline:3px solid #b3123e;outline-offset:3px}"
+    },
+    {
+      "name": "Flash Sheet Filter Chip",
+      "kind": "chip",
+      "refersTo": "",
+      "description": "Square chip with a 2px ink border; pressed state inverts to ink.",
+      "html": "<button class=\"ds-flash-chip\">Gym life</button>",
+      "css": ".ds-flash-chip{min-height:44px;padding:0 18px;border:2px solid #17110f;border-radius:0;background:#f5ecdd;color:#17110f;font:600 15px Archivo,system-ui,sans-serif;cursor:pointer;transition:background-color .2s,color .2s}.ds-flash-chip:hover{background:#e5d4b9}.ds-flash-chip[aria-pressed=true],.ds-flash-chip:active{background:#17110f;color:#f5ecdd}.ds-flash-chip:focus-visible{outline:3px solid #b3123e;outline-offset:3px}"
+    },
+    {
+      "name": "Flor Fuerte Buy Button",
+      "kind": "button",
+      "refersTo": "flor-button-buy",
+      "description": "Rose pill; buy colour on cream grounds.",
+      "html": "<button class=\"ds-flor-buy\">Add the pack</button>",
+      "css": ".ds-flor-buy{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Figtree,system-ui,sans-serif;background:#9e0f35;color:#fff3e6;border-radius:999px}.ds-flor-buy:hover{transform:translateY(-1px)}.ds-flor-buy:hover{background:#800a2a}.ds-flor-buy:active{transform:scale(.97)}.ds-flor-buy:focus-visible{outline:3px solid #9e0f35;outline-offset:3px}"
+    },
+    {
+      "name": "Flor Fuerte Buy on Rose",
+      "kind": "custom",
+      "refersTo": "flor-button-buy-on-rose",
+      "description": "Gold pill; the buy colour where the ground is itself rose.",
+      "html": "<div class=\"ds-flor-field\"><button class=\"ds-flor-gold\">Add</button></div>",
+      "css": ".ds-flor-gold{font-weight:600;font-size:16px;min-height:48px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;transition:background-color .2s,color .2s,transform .18s cubic-bezier(.16,1,.3,1);font-family:Figtree,system-ui,sans-serif;min-height:56px;padding:0 32px;background:#f2b51c;color:#1c0a0e;border-radius:999px;}.ds-flor-gold:hover{transform:translateY(-1px)}.ds-flor-gold:hover{background:#ffc634}.ds-flor-gold:active{transform:scale(.97)}.ds-flor-gold:focus-visible{outline:3px solid #f2b51c;outline-offset:3px}.ds-flor-field{display:inline-block;padding:24px;background:#9e0f35}"
+    },
+    {
+      "name": "Shared Header Nav",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Sticky header: logo, centred nav with a scale-in underline, language and cart buttons with a count badge. Shown in Rosa y Oro tokens.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-logo\">Fortabella</a><ul><li><a aria-current=\"page\">Shop</a></li><li><a>Story</a></li></ul><span class=\"ds-nav-actions\"><button>ES</button><button>Cart <b>2</b></button></span></nav>",
+      "css": ".ds-nav{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;height:76px;padding:0 24px;background:#f8e5e7;color:#2a0e15;font-family:Jost,system-ui,sans-serif}.ds-nav-logo{font:700 22px 'UnifrakturMaguntia',serif}.ds-nav ul{display:flex;gap:28px;margin:0;padding:0;list-style:none;justify-content:center}.ds-nav ul a{position:relative;padding:8px 0;font-weight:500;cursor:pointer}.ds-nav ul a::after{content:'';position:absolute;left:0;right:0;bottom:2px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.16,1,.3,1)}.ds-nav ul a:hover::after,.ds-nav ul a[aria-current=page]::after{transform:scaleX(1)}.ds-nav-actions{display:flex;gap:8px}.ds-nav-actions button{min-height:44px;padding:0 14px;border:0;background:transparent;border-radius:999px;font:600 15px Jost,system-ui,sans-serif;color:inherit;display:inline-flex;align-items:center;gap:8px}.ds-nav-actions button:hover{background:rgba(42,14,21,.07)}.ds-nav-actions b{min-width:24px;height:24px;border-radius:12px;display:inline-grid;place-items:center;background:#b3123e;color:#fff8f2;font-size:13px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Logo Sets the Room",
+    "overview": "Fortabella's supplied logo (cream blackletter with a gilded bevel, crimson wild roses with gold centres, olive leaves, a gold diamond between the two halves of the motto) is the one ornate object in every direction. Each direction builds a room around it: a blush boutique (Rosa y Oro), a black velvet jewellery box (Terciopelo), a tattoo flash sheet (Flash Sheet), a field of crimson petals (Flor Fuerte). The shop underneath is one system: same header, product card, filters, product page, quantity stepper, cart drawer and footer, written once in `shared/css/core.css` and `shared/js/store.js`, and fed by one data file, `shared/data/catalog.js`.\n\nThe project currently holds all four directions because the client has not chosen yet. A future build extends exactly one of them. Read the Shared sections first, then the block for the chosen direction, and ignore the other three. Never mix directions: the token names are shared, but each direction's values, shapes and buy colour belong to that direction alone.\n\nDensity is boutique, not marketplace: large display type, generous section padding (roughly 72px to 150px vertically), four-up product grids on desktop and two-up on phones. The primary visitor arrives from Instagram on a phone, so every interactive target is at least 44px tall.",
+    "keyCharacteristics": [
+      "One shared structural system (`core.css` + `store.js`) with four token sets, each in its direction's `theme.css`.",
+      "The client logo is used exactly as supplied, never recoloured or redrawn.",
+      "The motto always appears in both languages, joined by the logo's gold diamond.",
+      "One filled colour means \"buy\" in each direction; every other button is outlined or ghosted.",
+      "Sticker art and prices are labelled samples until the client supplies real ones.",
+      "Fully bilingual: every UI string lives in EN and ES in `store.js`; sticker phrases stay in their original language."
+    ],
+    "rules": [
+      {
+        "name": "The One Buy Colour Rule",
+        "body": "Each direction has exactly one filled colour that means \"add to cart\": crimson in Rosa y Oro and Flash Sheet, gold in Terciopelo, rose in Flor Fuerte (gold only where the ground is itself rose). Secondary actions are outlined, ghosted or plain links. The \"added\" state swaps to a different fill (ink, olive or cream) so the buy colour never reads as a confirmation.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Field Rule",
+        "body": "Each direction's home page carries one contrasting colour field and only one: wine in Rosa y Oro, cream in Terciopelo, black in Flash Sheet. Flor Fuerte is the exception by design: the rose field is its world (hero and collections), and its single contrasting band is the black statement.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence-Case Rule",
+        "body": "No uppercase tracked labels above headings. The only caps in the system are inside the logo artwork itself.",
+        "section": "typography"
+      },
+      {
+        "name": "The Real Material Rule",
+        "body": "A material is either a real image or absent. Terciopelo's velvet is two generated photographic plates (`2-terciopelo/img/velvet-ground.webp` tiled at 512px behind the hero, `velvet-cushion.webp` behind every sticker, the charm, the product image, cart lines and collection art). Gradients, noise filters or shadows pretending to be velvet, paper, gold foil or tattoo ink are not used.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set colours only through the shared token names in the chosen direction's `theme.css`; re-scope `--ink-soft`, `--sticker-edge` and `--focus` on any section that changes ground.",
+      "**Do** keep exactly one filled buy colour per direction, and give the \"added\" state a different fill.",
+      "**Do** use the logo lockup with its own tagline only on light grounds; use the mark plus live motto text everywhere else.",
+      "**Do** show the motto in both languages, joined by the gold diamond.",
+      "**Do** add every new sticker, pack or category as an entry in `shared/data/catalog.js`; set `image` when real art arrives and the stand-in art disappears.",
+      "**Do** keep \"sample\" labelling on prices and sticker art (footer note and cart note) until the client supplies real values.",
+      "**Do** honour `prefers-reduced-motion`: the shared rule cuts every animation and transition, and the Terciopelo sway and Flor rose rotation stop."
+    ],
+    "donts": [
+      "**Don't** recolour, redraw, crop the lettering of, or apply filters to the client logo.",
+      "**Don't** fade or slide sections in one by one as they scroll into view; content is visible on load.",
+      "**Don't** imitate materials (velvet, paper, foil, ink) with CSS gradients, noise or shadows; use a real image plate or nothing.",
+      "**Don't** put small uppercase eyebrow labels above headings.",
+      "**Don't** add a second filled button colour beside the buy colour in the same direction.",
+      "**Don't** mix tokens, fonts or shapes from two directions in one build.",
+      "**Don't** invent prices, reviews, testimonials or customer counts."
+    ]
+  }
+}

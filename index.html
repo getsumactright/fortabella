@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fortabella · Four directions</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e0a0b">
+<link rel="icon" href="shared/brand/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ground: #0e0a0b; --surface: #1a1214; --surface-2: #261a1d; --ink: #fff2e2; --ink-soft: #d6c0b3; --gold: #ebb33a; --gutter: clamp(16px, 3.2vw, 40px); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font-family: "Jost", system-ui, sans-serif; font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; height: auto; }
+  h1, h2, p, ul { margin: 0; padding: 0; }
+  ul { list-style: none; }
+  a { color: inherit; text-underline-offset: 0.22em; }
+  code { font-size: 0.92em; color: var(--ink); }
+  ::selection { background: var(--gold); color: var(--ground); }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 1360px; margin-inline: auto; padding-inline: var(--gutter); }
+  header { padding: clamp(40px, 6vw, 88px) 0 clamp(40px, 5vw, 72px); display: grid; justify-items: center; text-align: center; gap: 18px; }
+  .logo { width: min(560px, 84vw); }
+  h1 { font-weight: 500; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.05; letter-spacing: -0.01em; }
+  .lede { max-width: 58ch; color: var(--ink-soft); font-size: 18px; }
+  .gem { display: inline-block; width: 0.5em; height: 0.5em; background: var(--gold); transform: rotate(45deg); margin: 0 0.6em 0.1em; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 44px); padding-bottom: clamp(64px, 8vw, 120px); }
+  .dir { display: grid; gap: 16px; align-content: start; }
+  .dir__shot { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: var(--surface); }
+  .dir__shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+  .dir__shot:hover img { transform: scale(1.03); }
+  .dir__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+  .dir h2 { font-weight: 500; font-size: clamp(26px, 2.2vw, 32px); line-height: 1.1; }
+  .chips { display: flex; gap: 6px; }
+  .chips span { width: 22px; height: 22px; border-radius: 50%; }
+  .dir p { color: var(--ink-soft); max-width: 60ch; }
+  .dir__links { display: flex; flex-wrap: wrap; gap: 8px 22px; font-weight: 600; }
+  .dir__links a:first-child { color: var(--gold); }
+  .shared { background: var(--surface); }
+  .shared .wrap { padding-block: clamp(56px, 7vw, 96px); display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 80px); }
+  .shared h2 { font-weight: 500; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.1; }
+  .shared ul { display: grid; gap: 14px; }
+  .shared li { padding-left: 26px; position: relative; color: var(--ink-soft); }
+  .shared li::before { content: ""; position: absolute; left: 4px; top: 0.62em; width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); }
+  .shared strong { color: var(--ink); font-weight: 600; }
+  footer { padding: 32px 0 48px; color: var(--ink-soft); font-size: 15px; text-align: center; }
+  @media (max-width: 820px) { .grid, .shared .wrap { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="logo" src="shared/brand/logo-mark.webp" width="1526" height="792" alt="Fortabella">
+  <h1>Four directions for the Fortabella shop</h1>
+  <p class="lede">Strength is beauty<span class="gem" aria-hidden="true"></span>La fortaleza es belleza. Each demo is a working shop with Home, Shop, product pages, a cart and an English / Español switch. Open one, add a sticker, switch the language.</p>
+</header>
+
+<main class="wrap">
+  <ul class="grid">
+    <li class="dir">
+      <a class="dir__shot" href="1-rosa-y-oro/index.html"><img src="shared/thumbs/1-rosa-y-oro.webp" width="960" height="600" alt="Rosa y Oro home page: the logo centred on blush pink above the headline"></a>
+      <div class="dir__head"><h2>Rosa y Oro</h2><span class="chips" aria-hidden="true"><span style="background:#f8e5e7"></span><span style="background:#fff8f2"></span><span style="background:#b3123e"></span><span style="background:#d99a12"></span><span style="background:#2a0e15"></span></span></div>
+      <p>A blush boutique. The logo leads, centred and large; stickers sit in arched display niches like pieces in a jewelry case. Bodoni Moda and Jost. The calmest, most classic option.</p>
+      <p class="dir__links"><a href="1-rosa-y-oro/index.html">Open home</a><a href="1-rosa-y-oro/shop.html">Shop page</a><a href="1-rosa-y-oro/product.html?id=lifting-and-lashes">Product page</a></p>
+    </li>
+    <li class="dir">
+      <a class="dir__shot" href="2-terciopelo/index.html"><img src="shared/thumbs/2-terciopelo.webp" width="960" height="600" alt="Terciopelo home page: the logo glowing on black velvet beside one sticker on a velvet disc"></a>
+      <div class="dir__head"><h2>Terciopelo</h2><span class="chips" aria-hidden="true"><span style="background:#2b1a1f"></span><span style="background:#fff2e2"></span><span style="background:#ebb33a"></span><span style="background:#c8174a"></span></span></div>
+      <p>Black velvet taken from the logo's own outline, so the gold and roses glow. Stickers rest on velvet cushions like charms in a jewelry box. Marcellus and Jost. Luxe and dramatic, still minimal.</p>
+      <p class="dir__links"><a href="2-terciopelo/index.html">Open home</a><a href="2-terciopelo/shop.html">Shop page</a><a href="2-terciopelo/product.html?id=lipstick-and-lifting">Product page</a></p>
+    </li>
+    <li class="dir">
+      <a class="dir__shot" href="3-flash-sheet/index.html"><img src="shared/thumbs/3-flash-sheet.webp" width="960" height="600" alt="Flash Sheet home page: a framed tattoo flash sheet holding the logo and eight stickers with prices"></a>
+      <div class="dir__head"><h2>Flash Sheet</h2><span class="chips" aria-hidden="true"><span style="background:#f5ecdd"></span><span style="background:#17110f"></span><span style="background:#b3123e"></span><span style="background:#c98a0b"></span><span style="background:#5e7019"></span></span></div>
+      <p>The shop as a tattoo flash sheet, in the Old English lettering tradition of the logo. Pick a sticker straight off the sheet; a bilingual list says what every phrase means. Grenze Gotisch and Archivo.</p>
+      <p class="dir__links"><a href="3-flash-sheet/index.html">Open home</a><a href="3-flash-sheet/shop.html">Shop page</a><a href="3-flash-sheet/product.html?id=pets-and-heavy-sets">Product page</a></p>
+    </li>
+    <li class="dir">
+      <a class="dir__shot" href="4-flor-fuerte/index.html"><img src="shared/thumbs/4-flor-fuerte.webp" width="960" height="600" alt="Flor Fuerte home page: the logo on crimson beside the logo's flower redrawn large"></a>
+      <div class="dir__head"><h2>Flor Fuerte</h2><span class="chips" aria-hidden="true"><span style="background:#9e0f35"></span><span style="background:#fff3e6"></span><span style="background:#1c0a0e"></span><span style="background:#f2b51c"></span><span style="background:#8fa12a"></span></span></div>
+      <p>Deep crimson rose carries whole sections. The logo's flower is redrawn large and turns slowly behind the hero sticker. Gloock and Figtree. Bold, editorial, unmistakably feminine.</p>
+      <p class="dir__links"><a href="4-flor-fuerte/index.html">Open home</a><a href="4-flor-fuerte/shop.html">Shop page</a><a href="4-flor-fuerte/product.html?id=cafecito-y-kettlebells">Product page</a></p>
+    </li>
+  </ul>
+</main>
+
+<section class="shared" aria-labelledby="shared-title">
+  <div class="wrap">
+    <h2 id="shared-title">Built to grow, whichever she picks</h2>
+    <ul>
+      <li><strong>One product file.</strong> Every sticker, price, collection and description lives in <code>shared/data/catalog.js</code>. Adding a sticker is one new entry; it appears on every page and filter.</li>
+      <li><strong>Her real designs, both languages.</strong> Each bilingual design is one product with an English and a Español version; shoppers pick one on the product page.</li>
+      <li><strong>Bilingual by design.</strong> Every label switches between English and Español, and the choice is remembered.</li>
+      <li><strong>Checkout is one setting.</strong> Paste a Stripe Payment Link, Shopify or Snipcart URL into <code>checkoutUrl</code> at launch.</li>
+      <li><strong>Sample content.</strong> Prices, sizes, finishes and the Starter Pack are placeholders until the client confirms them.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="wrap">Fortabella demos · not for public indexing</footer>
+</body>
+</html>
